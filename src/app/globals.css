@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --bg: 246 244 240;
+  --fg: 20 18 16;
+  --muted: 116 110 104;
+  --card: 255 255 255;
+  --ring: 20 18 16;
+  --shelf: 223 216 206;
+  --accent: 90 74 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 12 12 12;
+    --fg: 242 240 236;
+    --muted: 170 162 154;
+    --card: 18 18 18;
+    --ring: 242 240 236;
+    --shelf: 34 34 34;
+    --accent: 158 140 255;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  letter-spacing: 0.01em;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Hiragino Sans",
+    "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.shelf-bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(var(--shelf), 0.18),
+      rgba(var(--shelf), 0.18)
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(var(--shelf), 0.12),
+      rgba(var(--shelf), 0.12) 1px,
+      transparent 1px,
+      transparent 84px
+    );
+  background-size: auto, auto;
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 3px rgba(var(--ring), 0.15);
+}
+
+.mdx {
+  color: rgb(var(--fg));
+}
+
+.mdx h1,
+.mdx h2,
+.mdx h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.mdx h2 {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.mdx p {
+  margin-top: 0.9rem;
+  line-height: 1.75;
+  color: rgb(var(--muted));
+  font-size: 0.95rem;
+}
+
+.mdx ul {
+  margin-top: 0.9rem;
+  padding-left: 1.1rem;
+  color: rgb(var(--muted));
+  font-size: 0.95rem;
+}
+
+.mdx li {
+  margin-top: 0.35rem;
+}
+
+.mdx strong {
+  color: rgb(var(--fg));
+  font-weight: 600;
+}
+
+.mdx a {
+  color: rgb(var(--fg));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "tomboy-survival-guide",
+    "title": "Tomboy Survival Guide",
+    "author": "Ivan E. Coyote",
+    "coverImage": "/covers/tomboy-survival-guide.jpg",
+    "tags": ["essay"],
+    "shelf": "foreign",
+    "rating": 4,
+    "finishedOn": "2024-10-24"
+  },
+  {
+    "id": "red-white-royal-blue",
+    "title": "Red, White & Royal Blue",
+    "author": "Casey McQuiston",
+    "coverImage": "/covers/red-white-royal-blue.jpg",
+    "tags": ["novel"],
+    "shelf": "foreign",
+    "rating": 5,
+    "finishedOn": "2025-05-01"
+  },
+  {
+    "id": "one-last-stop",
+    "title": "One Last Stop",
+    "author": "Casey McQuiston",
+    "coverImage": "/covers/one-last-stop.jpg",
+    "tags": ["novel"],
+    "shelf": "foreign",
+    "rating": 5,
+    "finishedOn": "2025-11-01"
+  },
+  {
+    "id": "memo-no-maryoku",
+    "title": "メモの魔力",
+    "author": "前田裕二",
+    "coverImage": "/covers/memo-no-maryoku.jpg",
+    "tags": ["business"],
+    "shelf": "jp",
+    "rating": 4,
+    "finishedOn": "2025-11-25"
+  },
+  {
+    "id": "the-four-agreements",
+    "title": "The Four Agreements",
+    "author": "Don Miguel Ruiz",
+    "coverImage": "/covers/the-four-agreements.jpg",
+    "tags": ["self-help"],
+    "shelf": "foreign",
+    "rating": 5,
+    "finishedOn": "2026-03-08"
+  },
+  {
+    "id": "the-mastery-of-love",
+    "title": "The Mastery of Love",
+    "author": "Don Miguel Ruiz",
+    "coverImage": "/covers/the-mastery-of-love.jpg",
+    "tags": ["self-help"],
+    "shelf": "foreign",
+    "rating": 3,
+    "finishedOn": "2026-04-04"
+  },
+  {
+    "id": "single-on-purpose",
+    "title": "Single on Purpose",
+    "author": "John Kim",
+    "coverImage": "/covers/single-on-purpose.jpg",
+    "tags": ["self-help", "essay"],
+    "shelf": "foreign",
+    "rating": 4,
+    "finishedOn": "2026-04-16"
+  }
+]
