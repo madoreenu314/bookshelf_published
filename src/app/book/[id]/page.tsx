@@ -10,6 +10,19 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+function stripLeadingFinishedOnLine(markdown: string): string {
+  const lines = markdown.replaceAll("\r\n", "\n").split("\n");
+  while (lines.length > 0 && lines[0]?.trim() === "") lines.shift();
+
+  const first = lines[0]?.trim() ?? "";
+  if (/^読了日\s*:/u.test(first)) {
+    lines.shift();
+    if (lines.length > 0 && lines[0]?.trim() === "") lines.shift();
+  }
+
+  return lines.join("\n");
+}
+
 export function generateStaticParams() {
   return getBooks().map((b) => ({ id: b.id }));
 }
@@ -19,8 +32,12 @@ export default async function BookPage({ params }: Props) {
   const book = getBookById(id);
   if (!book) notFound();
 
-  const md = book.article ? readArticleMarkdown(book.article) : null;
+  const rawMd = book.article ? readArticleMarkdown(book.article) : null;
+  const md = rawMd ? stripLeadingFinishedOnLine(rawMd) : null;
   const html = md ? markdownToHtml(md) : null;
+  const htmlWithFinishedOn = html
+    ? `<p>読了日: ${formatFinishedOn(book.finishedOn)}</p>\n${html}`
+    : null;
 
   return (
     <div className="min-h-screen shelf-bg">
@@ -70,7 +87,7 @@ export default async function BookPage({ params }: Props) {
           <main>
             <div className="rounded-3xl border border-black/10 bg-[rgb(var(--card))]/70 p-5 shadow-sm backdrop-blur dark:border-white/10 sm:p-6">
               <div className="text-xs font-medium text-[rgb(var(--muted))]">
-                {book.author} · {formatFinishedOn(book.finishedOn)}
+                {book.author}
               </div>
               <h1 className="mt-2 text-balance text-2xl font-semibold tracking-tight sm:text-3xl">
                 {book.title}
@@ -78,14 +95,14 @@ export default async function BookPage({ params }: Props) {
             </div>
 
             <section className="mt-6 rounded-3xl border border-black/10 bg-[rgb(var(--card))]/70 p-5 shadow-sm backdrop-blur dark:border-white/10 sm:p-6">
-              {html ? (
+              {htmlWithFinishedOn ? (
                 <div
                   className="mdx"
-                  dangerouslySetInnerHTML={{ __html: html }}
+                  dangerouslySetInnerHTML={{ __html: htmlWithFinishedOn }}
                 />
               ) : (
                 <div className="text-sm text-[rgb(var(--muted))]">
-                  この記事はまだありません。
+                  読書メモはまだありません。
                 </div>
               )}
             </section>

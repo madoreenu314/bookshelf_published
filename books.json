@@ -68,5 +68,16 @@
     "shelf": "foreign",
     "rating": 4,
     "finishedOn": "2026-04-16"
+  },
+  {
+    "id": "attached",
+    "title": "Attached.",
+    "author": "Amir Levine, M.D. / Rachel S. F. Heller, M.A.",
+    "coverImage": "/covers/attached.jpg",
+    "tags": ["self-help", "science"],
+    "shelf": "foreign",
+    "rating": 5,
+    "finishedOn": "2026-05-18",
+    "article": "content/books/attached.md"
   }
 ]
