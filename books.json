@@ -79,5 +79,15 @@
     "rating": 5,
     "finishedOn": "2026-05-18",
     "article": "content/books/attached.md"
+  },
+  {
+    "id": "atomic-habits",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "coverImage": "/covers/atomic-habits.jpg",
+    "tags": ["self-help"],
+    "shelf": "foreign",
+    "rating": 4,
+    "finishedOn": "2026-07-18"
   }
 ]
