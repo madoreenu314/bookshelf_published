@@ -7,7 +7,12 @@
     "tags": ["essay"],
     "shelf": "foreign",
     "rating": 4,
-    "finishedOn": "2024-10-24"
+    "finishedOn": "2024-10-24",
+    "isbn": "9781551526560",
+    "pageCount": 256,
+    "heightMm": 203,
+    "widthMm": 127,
+    "thicknessMm": 13
   },
   {
     "id": "red-white-royal-blue",
@@ -17,7 +22,12 @@
     "tags": ["novel"],
     "shelf": "foreign",
     "rating": 5,
-    "finishedOn": "2025-05-01"
+    "finishedOn": "2025-05-01",
+    "isbn": "9781250316776",
+    "pageCount": 432,
+    "heightMm": 209,
+    "widthMm": 138,
+    "thicknessMm": 30
   },
   {
     "id": "one-last-stop",
@@ -27,7 +37,12 @@
     "tags": ["novel"],
     "shelf": "foreign",
     "rating": 5,
-    "finishedOn": "2025-11-01"
+    "finishedOn": "2025-11-01",
+    "isbn": "9781250244499",
+    "pageCount": 432,
+    "heightMm": 229,
+    "widthMm": 152,
+    "thicknessMm": 25
   },
   {
     "id": "memo-no-maryoku",
@@ -37,7 +52,12 @@
     "tags": ["business"],
     "shelf": "jp",
     "rating": 4,
-    "finishedOn": "2025-11-25"
+    "finishedOn": "2025-11-25",
+    "isbn": "9784344034082",
+    "pageCount": 254,
+    "heightMm": 188,
+    "widthMm": 128,
+    "thicknessMm": 16
   },
   {
     "id": "the-four-agreements",
@@ -47,7 +67,12 @@
     "tags": ["self-help"],
     "shelf": "foreign",
     "rating": 5,
-    "finishedOn": "2026-03-08"
+    "finishedOn": "2026-03-08",
+    "isbn": "9781878424310",
+    "pageCount": 160,
+    "heightMm": 184,
+    "widthMm": 127,
+    "thicknessMm": 12
   },
   {
     "id": "the-mastery-of-love",
@@ -57,7 +82,12 @@
     "tags": ["self-help"],
     "shelf": "foreign",
     "rating": 3,
-    "finishedOn": "2026-04-04"
+    "finishedOn": "2026-04-04",
+    "isbn": "9781878424426",
+    "pageCount": 224,
+    "heightMm": 184,
+    "widthMm": 127,
+    "thicknessMm": 15
   },
   {
     "id": "single-on-purpose",
@@ -67,7 +97,12 @@
     "tags": ["self-help", "essay"],
     "shelf": "foreign",
     "rating": 4,
-    "finishedOn": "2026-04-16"
+    "finishedOn": "2026-04-16",
+    "isbn": "9780062980748",
+    "pageCount": 256,
+    "heightMm": 203,
+    "widthMm": 135,
+    "thicknessMm": 15
   },
   {
     "id": "attached",
@@ -78,6 +113,11 @@
     "shelf": "foreign",
     "rating": 5,
     "finishedOn": "2026-05-18",
+    "isbn": "9781585429134",
+    "pageCount": 304,
+    "heightMm": 229,
+    "widthMm": 152,
+    "thicknessMm": 20,
     "article": "content/books/attached.md"
   },
   {
@@ -88,6 +128,11 @@
     "tags": ["self-help"],
     "shelf": "foreign",
     "rating": 4,
-    "finishedOn": "2026-07-18"
+    "finishedOn": "2026-07-18",
+    "isbn": "9781847941831",
+    "pageCount": 320,
+    "heightMm": 233,
+    "widthMm": 153,
+    "thicknessMm": 26
   }
 ]
