@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen shelf-bg">
       <div className="mx-auto max-w-6xl px-5 pb-24 pt-10 sm:px-8">
-        <main className="mt-10 sm:mt-0">
+        <main className="mt-10">
           <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
             madoreenu&apos;s bookshelf
           </h1>

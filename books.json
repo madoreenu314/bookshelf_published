@@ -134,5 +134,15 @@
     "heightMm": 233,
     "widthMm": 153,
     "thicknessMm": 26
+  },
+  {
+    "id": "babayaga-no-yoru",
+    "title": "ババヤガの夜",
+    "author": "王谷晶",
+    "coverImage": "/covers/ババヤガの夜.jpg",
+    "tags": ["novel"],
+    "shelf": "jp",
+    "rating": 4,
+    "finishedOn": "2026-09-17"
   }
 ]
